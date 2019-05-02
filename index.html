@@ -41,7 +41,49 @@
                       </li>
                     </ul>
                   </div>
-                  <button id="filter-btn" type="submit" class="btn btn-default">Filter Table</button>
+                </form>
+				<form>
+                  <div class="form-group">
+                    <ul class="list-group" id="filters">
+                      <li class="filter list-group-item">
+                        <label for="country">Enter a Country Code</label>
+                        <input class="form-control" id="countrycd" type="text" placeholder="US">
+                      </li>
+                    </ul>
+                  </div>
+                </form>
+				<form>
+                  <div class="form-group">
+                    <ul class="list-group" id="filters">
+                      <li class="filter list-group-item">
+                        <label for="state">Enter a State Code</label>
+                        <input class="form-control" id="statecd" type="text" placeholder="TX">
+                      </li>
+                    </ul>
+                  </div>
+                </form>
+				
+				<form>
+                  <div class="form-group">
+                    <ul class="list-group" id="filters">
+                      <li class="filter list-group-item">
+                        <label for="city">Enter a City Name</label>
+                        <input class="form-control" id="city" type="text" placeholder="El Cajon">
+                      </li>
+                    </ul>
+                  </div>
+                  
+                </form>
+				<form>
+                  <div class="form-group">
+                    <ul class="list-group" id="filters">
+                      <li class="filter list-group-item">
+                        <label for="comments">Search the Comments</label>
+                        <input class="form-control" id="comments" type="text" placeholder="Light">
+                      </li>
+                    </ul>
+                  </div>
+				  <button id="filter-btn" type="submit" class="btn btn-default">Filter Table</button>
                 </form>
               </div>
             </div>
@@ -61,7 +103,7 @@
                   <th class="table-head">Comments</th>
                 </tr>
               </thead>
-              <tbody></tbody>
+              <tbody id='ufo-body'></tbody>
             </table>
           </div>
         </div>
