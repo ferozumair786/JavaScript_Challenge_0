@@ -68,7 +68,7 @@ button.on("click", function(){
     console.log(stateValue);
 
     //filter data by state
-    if (countryValue == '')
+    if (stateValue == '')
         {filteredData = filteredData}
     else 
         {filteredData = filteredData.filter(filteredData => filteredData.state.toUpperCase() === stateValue.toUpperCase())}
@@ -101,7 +101,7 @@ button.on("click", function(){
     console.log(commValue);
 
     //filter data by date
-    if (cityValue == '')
+    if (commValue == '')
         {filteredData = filteredData}
     else 
         {filteredData = filteredData.filter(filteredData => filteredData.comments.toUpperCase().search(commValue.toUpperCase()) !== -1)}
